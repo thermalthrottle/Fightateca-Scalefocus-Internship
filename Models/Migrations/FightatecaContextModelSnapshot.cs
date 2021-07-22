@@ -19,7 +19,7 @@ namespace Models.Migrations
                 .HasAnnotation("ProductVersion", "5.0.8")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("BattleResultsUser", b =>
+            modelBuilder.Entity("BattleResultsCharacter", b =>
                 {
                     b.Property<int>("WinnerId")
                         .HasColumnType("int");
@@ -31,10 +31,10 @@ namespace Models.Migrations
 
                     b.HasIndex("battlesWonId");
 
-                    b.ToTable("BattleResultsUser");
+                    b.ToTable("BattleResultsCharacter");
                 });
 
-            modelBuilder.Entity("BattleResultsUser1", b =>
+            modelBuilder.Entity("BattleResultsCharacter1", b =>
                 {
                     b.Property<int>("LoserId")
                         .HasColumnType("int");
@@ -46,7 +46,7 @@ namespace Models.Migrations
 
                     b.HasIndex("battlesLostId");
 
-                    b.ToTable("BattleResultsUser1");
+                    b.ToTable("BattleResultsCharacter1");
                 });
 
             modelBuilder.Entity("Models.Models.BattleResults", b =>
@@ -150,9 +150,9 @@ namespace Models.Migrations
                     b.HasDiscriminator().HasValue("CharacterStates");
                 });
 
-            modelBuilder.Entity("BattleResultsUser", b =>
+            modelBuilder.Entity("BattleResultsCharacter", b =>
                 {
-                    b.HasOne("Models.Models.User", null)
+                    b.HasOne("Models.Models.Character", null)
                         .WithMany()
                         .HasForeignKey("WinnerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -165,9 +165,9 @@ namespace Models.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("BattleResultsUser1", b =>
+            modelBuilder.Entity("BattleResultsCharacter1", b =>
                 {
-                    b.HasOne("Models.Models.User", null)
+                    b.HasOne("Models.Models.Character", null)
                         .WithMany()
                         .HasForeignKey("LoserId")
                         .OnDelete(DeleteBehavior.Cascade)

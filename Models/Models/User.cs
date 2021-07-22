@@ -29,7 +29,5 @@ namespace Models.Models
         [Required]
         public DateTime DateCreated { get; set; }
         public virtual ICollection<Character> characters { get; set; }
-        public virtual ICollection<BattleResults> battlesWon { get; set; }
-        public virtual ICollection<BattleResults> battlesLost { get; set; }
     }
 }

@@ -15,11 +15,11 @@ namespace Models.Models
         [Required]
         public int WinnerId { get; set; }
         [Required]
-        public virtual ICollection<User> Winner { get; set; }
+        public virtual ICollection<Character> Winner { get; set; }
         [Required]
         public int LoserId { get; set; }
         [Required]
-        public virtual ICollection<User> Loser { get; set; }
+        public virtual ICollection<Character> Loser { get; set; }
         [Required]
         public DateTime DateCreated { get; set; }
     }

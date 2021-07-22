@@ -9,9 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Views", "Views\Views.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controllers", "Controllers\Controllers.csproj", "{559302D5-8C56-40A9-949C-3016DA6EA5C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{010AF0E7-2AA3-4E57-AD04-71508C924283}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOS", "DTOS\DTOS.csproj", "{839627FB-83E8-4A95-A061-59CB4C8211CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Service\Services.csproj", "{010AF0E7-2AA3-4E57-AD04-71508C924283}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{010AF0E7-2AA3-4E57-AD04-71508C924283}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{010AF0E7-2AA3-4E57-AD04-71508C924283}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{010AF0E7-2AA3-4E57-AD04-71508C924283}.Release|Any CPU.Build.0 = Release|Any CPU
-		{839627FB-83E8-4A95-A061-59CB4C8211CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{839627FB-83E8-4A95-A061-59CB4C8211CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{839627FB-83E8-4A95-A061-59CB4C8211CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{839627FB-83E8-4A95-A061-59CB4C8211CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

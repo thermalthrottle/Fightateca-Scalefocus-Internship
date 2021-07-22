@@ -35,10 +35,10 @@ namespace Models
                 .HasIndex(character => new { character.Name })
                 .IsUnique(true);
             modelBuilder.Entity<BattleResults>()
-                .HasMany<User>(br => br.Winner)
+                .HasMany<Character>(br => br.Winner)
                 .WithMany(u => u.battlesWon);
             modelBuilder.Entity<BattleResults>()
-                .HasMany<User>(br => br.Loser)
+                .HasMany<Character>(br => br.Loser)
                 .WithMany(u => u.battlesLost);
 
             //modelBuilder.Entity<RoundResults>()

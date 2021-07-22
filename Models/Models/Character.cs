@@ -40,5 +40,7 @@ namespace Models.Models
         public int HealthPoints { get; set; }
         [Required]
         public DateTime DateCreated { get; set; }
+        public virtual ICollection<BattleResults> battlesWon { get; set; }
+        public virtual ICollection<BattleResults> battlesLost { get; set; }
     }
 }
